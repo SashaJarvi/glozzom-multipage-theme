@@ -39,3 +39,9 @@ $('#main-nav a').on('click', function(event){
         })
     }
 })
+
+$('.slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+})
