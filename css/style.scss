@@ -78,3 +78,42 @@ body {
 .about-img {
   margin-top: -50px;
 }
+
+#faq {
+  .card {
+    border: #444;
+
+    .card-header,
+    .card-body {
+      background: #333333;
+    }
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+#main-footer {
+  background: #000000;
+  color: #ffffff;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
