@@ -18,9 +18,18 @@ $(function () {
     });
 });
 
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
+$('[data-fancybox="gallery"]').fancybox({
+    buttons : [
+        'slideShow',
+        'share',
+        'zoom',
+        'fullScreen',
+        'close'
+    ],
+    slideShow : {
+        speed : 4000
+    },
+    loop: true
 });
 
 $('body').scrollspy({
@@ -38,7 +47,7 @@ $('#main-nav a').on('click', function(event){
             window.location.hash = hash;
         })
     }
-})
+});
 
 $('.slider').slick({
     infinite: true,
@@ -52,4 +61,4 @@ $('.slider').slick({
         }
       }
     ]
-})
+});
